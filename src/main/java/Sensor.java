@@ -3,6 +3,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
+import java.util.logging.Logger;
 
 public class Sensor {
   private int lower;
@@ -14,6 +15,8 @@ public class Sensor {
   private ArrayList<Integer> arrayList;
 
   Sensor(int lower, int higher, int[] buffer) {
+      Logger log = Logger.getLogger(Sensor.class.getName());
+
      // construct an array list
      arrayList = new ArrayList<Integer>();
 
@@ -26,6 +29,7 @@ public class Sensor {
 
     // Sort the arrayList
     Collections.sort(arrayList);
+    log.info("arrayList is: " + arrayList.toString());
 
     this.length = arrayList.size();
     this.filtered = new int[this.length];
