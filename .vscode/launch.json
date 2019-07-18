@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Sensor",
+      "request": "launch",
+      "mainClass": "Sensor",
+      "projectName": "sensor"
+    }
+  ]
+}
