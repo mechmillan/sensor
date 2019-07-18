@@ -44,7 +44,7 @@ public class SensorTest {
   @Test
   public void TestMedian2() {
 
-    sensor = new Sensor(1, 10, new int[]{-2, 8, 5, 3, 8, 1, 15})
+    sensor = new Sensor(1, 10, new int[]{-2, 8, 5, 3, 8, 1, 15});
 
     double medianResult = sensor.findMedian();
 
