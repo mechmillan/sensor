@@ -40,12 +40,15 @@ public class Sensor {
 
   public double findMean() {
     double mean = 0;
-    double sum = 0;
 
-    for (int i : arrayList) {
-      sum += i;
-    }
+    // no streams
+    // double sum = 0;
+    // for (int i : arrayList) {
+    //   sum += i;
+    // }
 
+    // streams
+    double sum = arrayList.stream().reduce(0, (a, b) -> a + b);
     mean = sum / length;
     return mean;
   }
