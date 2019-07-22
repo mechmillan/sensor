@@ -31,8 +31,13 @@ public class Sensor {
     Collections.sort(arrayList);
     log.info("arrayList is: " + arrayList.toString());
 
+    // construct filtered int[]
     this.length = arrayList.size();
     this.filtered = new int[this.length];
+    for (int i = 0; i < arrayList.size(); i++) {
+      filtered[i] = arrayList.get(i);
+    }
+
     this.lower = lower;
     this.higher = higher;
     this.buffer = buffer;
