@@ -65,6 +65,7 @@ public class Sensor {
 
       int leftVal = arrayList.get(leftIdx);
       int rightVal = arrayList.get(rightIdx);
+
       double median = (leftVal + rightVal) / 2.0;
       return median;
     } else { // middle value if odd-lengthed
